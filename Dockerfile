@@ -79,8 +79,8 @@ RUN set -x && \
 
 
 COPY php/*.php /usr/share/nginx/html
-COPY laravel-8.5.5/public /usr/share/nginx/html
-COPY laravel-8.5.5 /var/www/html
+COPY public /usr/share/nginx/html
+COPY . /var/www/html
 COPY php/laravel-8 /var/www/html/
 
 RUN set -x && \
