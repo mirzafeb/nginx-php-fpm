@@ -9,7 +9,7 @@ phases:
     - echo Logging in to Amazon ECR....
     - aws --version
     # login to Elastic container registry
-    - eval $(aws ecr get-login --region us-east-1 --no-include-email | sed 's|https://||')
+    - eval $(aws ecr get-login --region ap-southeast-1 --no-include-email | sed 's|https://||')
     - REPOSITORY_URI=714071859213.dkr.ecr.ap-southeast-1.amazonaws.com/mirza/avana-test
     - IMAGE_TAG=1.0
   build:
