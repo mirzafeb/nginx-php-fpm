@@ -22,8 +22,8 @@ phases:
     - echo generating app key
     - php artisan key:generate
     - echo Building the Docker image...
-    - docker build -t $REPOSITORY_URI:latest .
-    - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+    - docker build -t mirza/avana-test:latest .
+    - docker tag mirza/avana-test:latest $REPOSITORY_URI:$IMAGE_TAG
   post_build:
     commands:
       - echo Build completed on `date`
